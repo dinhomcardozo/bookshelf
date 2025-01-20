@@ -1,0 +1,28 @@
+<h1><%= @book.title %></h1>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @book.genre %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @book.year %>
+</p>
+
+<p>
+  <strong>Book Cover:</strong>
+  <% if @book.book_cover.attached? %>
+    <%= image_tag @book.book_cover, alt: 'Book Cover', style: 'max-height: 100px;' %>
+  <% else %>
+    <p>No cover image available</p>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

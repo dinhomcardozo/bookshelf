@@ -1,0 +1,14 @@
+<div id="upload-page">
+    <h1>Upload em Massa de Livros</h1>
+
+    <%= form_with url: import_books_path, multipart: true, method: :post, local: true do |form| %>
+    <div class="field">
+        <%= form.label :file, "Selecione o arquivo para upload" %>
+        <%= form.file_field :file %>
+    </div>
+
+    <div class="actions">
+        <%= form.submit "Upload" %>
+    </div>
+    <% end %>
+</div>

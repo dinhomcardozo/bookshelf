@@ -1,0 +1,359 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+ /* INDEX - LISTA DE LIVROS */
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para o link de adicionar novo livro */
+  a[href*="new_book"] {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  a[href*="new_book"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para a tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  table thead {
+    background-color: #f4f4f4;
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilo para imagens */
+  table td img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para os links de ação */
+  table td a {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  table td a:first-child {
+    background-color: #2196F3;
+  }
+  
+  table td a:first-child:hover {
+    background-color: #0b7dda;
+  }
+  
+  table td a:nth-child(2) {
+    background-color: #ffa500;
+  }
+  
+  table td a:nth-child(2):hover {
+    background-color: #e69500;
+  }
+  
+  table td a:nth-child(3) {
+    background-color: #f44336;
+  }
+  
+  table td a:nth-child(3):hover {
+    background-color: #da190b;
+  }
+
+
+
+
+
+   /* SHOW */
+
+/* Estilo do título do livro */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo dos parágrafos */
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+  }
+  
+  /* Destaque para o texto em negrito */
+  p strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilo para a imagem da capa do livro */
+  p img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-height: 200px;
+  }
+  
+  /* Centralizar a capa do livro se for a única imagem */
+  p.text-center img {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  /* Botões de ação (Editar e Voltar) */
+  a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  a[href*="edit"] {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  a[href*="edit"]:hover {
+    background-color: #0b7dda;
+  }
+  
+  a[href*="books"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  a[href*="books"]:hover {
+    background-color: #45a049;
+  }
+
+
+
+  /* FORM GERAL (EDIT, CREATE) */
+
+  /* Estilos gerais do formulário */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para os campos do formulário */
+  .field {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  input[type="file"] {
+    padding: 0;
+    border: none;
+  }
+  
+  /* Estilos para o botão de envio */
+  .actions {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0b7dda;
+  }
+  
+  /* Estilos para a exibição de erros */
+  #error_explanation {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    color: #a94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #error_explanation h2 {
+    margin-top: 0;
+  }
+  
+  #error_explanation ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #error_explanation li {
+    margin: 5px 0;
+  }  
+
+  
+
+/* FILTROS /
+
+/* Container geral do formulário de busca */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+/* Cada campo do formulário */
+.search-form div {
+  flex: 1 1 calc(25% - 20px); /* Campos dividem o espaço em até 4 colunas */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels dos campos */
+.search-form label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Inputs e selects */
+.search-form input,
+.search-form select {
+  padding: 8px 12px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-form input:focus,
+.search-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Botões */
+.search-form .button,
+.search-form input[type="submit"] {
+  padding: 10px 15px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none; /* Para o link "Limpar Filtros" */
+}
+
+.search-form .button:hover,
+.search-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.search-form .button {
+  background-color: #6c757d; /* Botão "Limpar Filtros" com cor diferente */
+}
+
+.search-form .button:hover {
+  background-color: #5a6268;
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 768px) {
+  .search-form div {
+    flex: 1 1 100%; /* Cada campo ocupa a largura total */
+  }
+}
